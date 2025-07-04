@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>빛 태양 출력 계산하기</title>
 </head>
+
 <body>
-    <form action="userlnfoProcess.php" method="post">
-        <fieldset style="width: 300px;">
-            <legend>이름과 나이를 입력하세요</legend>
-                    이름:<input type= "text" name="user_name"><br>
-                    나이:<input type="text" name="user_age">
-            <input type="submit" value="제출하기">
+    <div class="title">
+        <h1>행성(planet)을 선택 하세요!</h1>
+        <form action="/action_page.php" method="POST">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <input type="radio" id="mercury" name="planet" value="수정">
+                <label for="mercury">수성</label><br>
+                <input type="radio" id="earth" name="planet" value="지구">
+                <label for="earth">지구</label><br>
+                <input type="radio" id="mars" name="planet" value="화성">
+                <label for="planet">화성</label><br>
+                <input type="submit" value="계산하기">
+        </form>
         </fieldset>
-    </form>
-    
+        </form>
+
+    </div>
+
 </body>
+
 </html>

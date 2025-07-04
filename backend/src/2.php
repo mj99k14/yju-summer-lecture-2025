@@ -14,12 +14,20 @@
 //First-class citizen
 
 
-$foo = 2;
-$bar = function() use ($foo)
+// $foo = 2;
+// $bar = function() use ($foo)
+// {
+//     echo "배고파<br>".$foo
+// };
+
+// $foo =10;
+
+// $bar();
+
+function sum($a, $b)
 {
-    echo "배고파<br>".$foo
-};
+    echo $a + $b;
+}
 
-$foo =10;
-
-$bar();
+$test = "sum";
+$test(2, 3);
